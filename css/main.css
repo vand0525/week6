@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  max-width: 80ch;
+  padding: 1rem 2rem;
+  margin-inline: auto;
+}
+header {
+  background-color: cornflowerblue;
+  color: white;
+  height: 4rem;
+  margin-bottom: 1rem;
+
+  h1 {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+}
+#enemyForm {
+  display: grid;
+  grid-template-columns: 12ch 30ch;
+  grid-template-rows: repeat(2rem);
+  gap: 1rem;
+  justify-content: center;
+}
+#enemyForm label,
+#enemyForm input,
+#enemyForm textarea {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.25rem;
+}
+#enemyForm input,
+#enemyForm textarea {
+  border: 1px solid #999;
+}
+#enemyForm :focus {
+  outline: 1px solid cornflowerblue;
+}
+#btnCancel {
+  background-color: firebrick;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  border: none;
+}
+#btnSave {
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  border: none;
+}
+main {
+  h2 {
+    font-weight: 500;
+  }
+}
+div.enemy {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.enemy h3 {
+  font-weight: 500;
+}
+.enemy p {
+  font-weight: 300;
+}
+.enemy button {
+  background-color: firebrick;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  border: none;
+}
+
+input.error,
+textarea.error {
+  background-color: hsl(0, 40%, 80%);
+  color: hsl(0, 60%, 20%);
+}
